@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row justify-content-center align-items-centr">
+  <div class="row justify-content-center align-items-center">
     <div class="col col-lg-6">
       <div class="text-center">
         <h1 [hidden]="isCross" class="uppercase text-danger">
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="col col-lg-6 text-center" *ngIf="winMessage">
+    <div class="col col-lg-6 text-center gameOver" *ngIf="winMessage">
       <h1 class="text-uppercase">Game Over {{ winMessage }}</h1>
       <button
         (click)="reloadGame()"
